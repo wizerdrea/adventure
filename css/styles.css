@@ -1,0 +1,29 @@
+
+.hero-image {
+  background-image: url("/lab1-html-css-wizerdrea/images/space/really-blue.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#gameHeader {
+  font-family: cursive;
+  font-size: 200%;
+  text-align: center;
+  color: green;
+}
+
+#choice1 {
+  text-align: right;
+}
+
+#choice2 {
+  text-align: left;
+}
+
+#or {
+  text-align: center;
+}
+
