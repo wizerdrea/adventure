@@ -1,9 +1,7 @@
-// Clears any old output when a button is pressed.
 const clear = function() {
     document.getElementById("output").innerHTML = "";
 };
 
-// Appends output to the #output div. More useful than printing to console. :-)
 const output = function(str) {
     document.getElementById("output").innerHTML = str;
 };
@@ -62,55 +60,55 @@ const getResult = function(choices) {
     if (choices[0] == 1) {
         if (choices[1] == 1) {
             if (choices[2] == 1) {
-                result = "Suddenly you find yourself confronted by a large spider.  It tences preparing to spring but you advance, quickly closing the distance.  The struggle is brief but intense.  You find you way back out of the forest without incident.  You have survived!!!";
+                result = "Suddenly, you find yourself confronted by a large spider.  It tenses preparing to spring, but you advance quickly closing the distance.  The struggle is brief but intense.  You find you way back out of the forest without incident.  You have survived!!!";
             }
             else if (choices[2] == 2) {
-                result = "Suddenly you find yourself confronted by a large spider.  It tences preparing to spring.  You make a hasty retreat, but are too slow.  In a few moments you are nothing more than spider food.  You have died!!!";
+                result = "Suddenly, you find yourself confronted by a large spider.  It tenses preparing to spring.  You make a hasty retreat but are too slow.  In a few moments you are nothing more than spider food.  You have died!!!";
             }
             else {
-                result = "You quicken your pass, whatever might be watching you it can't be faster than you.  You hear scuttering behind you.  It seems desparite but it is falling behind.  You let out a laugh.  You've escaped!";
+                result = "You quicken your pace, whatever might be watching you it can't be faster than you.  You hear scuttering behind you.  It seems desperate, but it is falling behind.  You let out a laugh.  You've escaped!";
             }
         }
         else if (choices[1] == 2) {
             if (choices[2] == 1) {
-                result = "You come out of your hiding spot and see the dragon on the path.  Now is your chance!  You have always wanted to fight a dragon!  You attack.  Unfortunately yoiu are not in a fairytale.  The fight is short, and you end as a cinder.  You have died!!!";
+                result = "You come out of your hiding spot and see a dragon on the path.  Now is your chance!  You have always wanted to fight a dragon!  You attack.  Unfortunately, you are not in a fairytale.  The fight is short, and you end as a cinder.  You have died!!!";
             }
             else if (choices[2] == 2) {
-                result = "As you come out of your hiding spot you see the dragon.  You know if you don't take this chance you will never agian have the opportunity to fight one.  So never it is.  You carfully make you way back and exit the forest.  You have survived!!!";
+                result = "As you come out of your hiding spot, you see a dragon.  You know if you don't take this chance you will never again have the opportunity to fight one.  So never it is.  You carefully make you way back and exit the forest.  You have survived!!!";
             }
             else {
-                result = "You slow your pace hoping to avoid any unwanted attention.  Then you here them.  A thousand quites squeeks.  You slow your pace even then hide in a thicket.  A hoard of rats runs through where you had been walking but fail to notice you in the trees.";
+                result = "You slow your pace hoping to avoid any unwanted attention.  Then you hear them.  A thousand quiets squeaks.  You slow your pace even more then hide in a thicket.  A hoard of rats runs through where you had been but fail to notice you in the trees.";
             }
         }
         else {
-            result = "You continue into the forest unsure of what you will find but the lure of adventure is too strong.  As you continue into the gloom of the forest you start to get the feeling something is watching you.";
+            result = "You continue into the forest unsure of what you will find, but the lure of adventure is too strong.  As you continue into the gloom of the forest, you start to get the feeling something is watching you.";
         }
     }
     else if (choices[0] == 2) {
         if (choices[1] == 1) {
             if (choices[2] == 1) {
-                result = "211";
+                result = "The creatures suddenly stop chasing you as a shadow blocks out the moon.  You dive for cover under a bush.  The moon returns and everything seems quiet so you start going home.  You don't even notice the dragon until it is too late.  You have died!!!";
             }
             else if (choices[2] == 2) {
-                result = "212";
+                result = "The creatures suddenly stop chasing you as a shadow blocks out the moon.  You dive for cover under a bush.  The moon returns and everything seems quiet, but nonetheless, you wait silently until morning and make your way home.  You have Survived!!!";
             }
             else {
-                result = "210";
+                result = "You feel a breath of air on the back of your neck.  You spin around to find three strange humanoid creatures blocking your path.  You attempt to surprise them by charging through their group.  You get through but hear them chasing you!";
             }
         }
         else if (choices[1] == 2) {
             if (choices[2] == 1) {
-                restart();
+                result = "After losing your pursuers, you notice it seems too quiet.  Quickly you climb a tree to find safety.  Then with a loud thud, a dragon lands and tears your tree out of the ground.  You know this is the end of you.  You have died!!!";
             }
             else if (choices[2] == 2) {
-                result = "222";
+                result = "You've lost your pursuers, but something seems wrong.  You lunge under a fallen tree in time to avoid a giant spider's grab for you.  The spider quickly begins constructing a web around the tree, and you realize you dodged the wrong way.  You have died!!!";
             }
             else {
-                result = "220";
+                result = "In your slow retreat you bump into something.  Quickly turning you find several strange creatures.  Desperately, you try to run around them dodging their attempts to grab you.  Somehow in the confusion you find yourself in the forest.";
             }
         }
         else {
-            result = "A sense of fear and foreboding fill you as you look down the over-grown path.  Slowly you begin to back away hoping nothing will happen.";
+            result = "A sense of fear and foreboding fill you as you look down the overgrown path.  Slowly, you begin to back away hoping nothing will happen.";
         }
     }
     return result;
@@ -137,13 +135,13 @@ const getQestion = function(choices) {
     }
     else if (choices[0] == 2) {
         if (choices[1] == 0) {
-            result = ["200", "200"];
+            result = ["Through", "Around"];
         }
         else if (choices[1] == 1) {
-            result = ["210", "210"];
+            result = ["Go", "Wait"];
         }
         else {
-            result = ["220", "220"];
+            result = ["Up", "Down"];
         }
     
     }
