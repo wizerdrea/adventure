@@ -46,6 +46,10 @@ document.getElementById("choice2").addEventListener("click", function(event) {
     if (currentChoice < 2) {
         currentChoice++;
     }
+    else
+    {
+        restart();
+    }
     let newQuestions = getQestion(choices);
     updateChoice1(newQuestions[0]);
     updateChoice2(newQuestions[1]);
@@ -54,32 +58,32 @@ document.getElementById("choice2").addEventListener("click", function(event) {
 
 
 const getResult = function(choices) {
-    let result = "000";
+    let result = "Are you Ready to begin?";
     if (choices[0] == 1) {
         if (choices[1] == 1) {
             if (choices[2] == 1) {
-                result = "111";
+                result = "Suddenly you find yourself confronted by a large spider.  It tences preparing to spring but you advance, quickly closing the distance.  The struggle is brief but intense.  You find you way back out of the forest without incident.  You have survived!!!";
             }
             else if (choices[2] == 2) {
-                result = "112";
+                result = "Suddenly you find yourself confronted by a large spider.  It tences preparing to spring.  You make a hasty retreat, but are too slow.  In a few moments you are nothing more than spider food.  You have died!!!";
             }
             else {
-                result = "110";
+                result = "You quicken your pass, whatever might be watching you it can't be faster than you.  You hear scuttering behind you.  It seems desparite but it is falling behind.  You let out a laugh.  You've escaped!";
             }
         }
         else if (choices[1] == 2) {
             if (choices[2] == 1) {
-                result = "121";
+                result = "You come out of your hiding spot and see the dragon on the path.  Now is your chance!  You have always wanted to fight a dragon!  You attack.  Unfortunately yoiu are not in a fairytale.  The fight is short, and you end as a cinder.  You have died!!!";
             }
             else if (choices[2] == 2) {
-                result = "122";
+                result = "As you come out of your hiding spot you see the dragon.  You know if you don't take this chance you will never agian have the opportunity to fight one.  So never it is.  You carfully make you way back and exit the forest.  You have survived!!!";
             }
             else {
-                result = "120";
+                result = "You slow your pace hoping to avoid any unwanted attention.  Then you here them.  A thousand quites squeeks.  You slow your pace even then hide in a thicket.  A hoard of rats runs through where you had been walking but fail to notice you in the trees.";
             }
         }
         else {
-            result = "100";
+            result = "You continue into the forest unsure of what you will find but the lure of adventure is too strong.  As you continue into the gloom of the forest you start to get the feeling something is watching you.";
         }
     }
     else if (choices[0] == 2) {
@@ -96,7 +100,7 @@ const getResult = function(choices) {
         }
         else if (choices[1] == 2) {
             if (choices[2] == 1) {
-                result = "221";
+                restart();
             }
             else if (choices[2] == 2) {
                 result = "222";
@@ -106,7 +110,7 @@ const getResult = function(choices) {
             }
         }
         else {
-            result = "200 A sense of fear and foreboding fill you as you look down the over-grown path.  Slowly you begin to back away hoping nothing will happen.";
+            result = "A sense of fear and foreboding fill you as you look down the over-grown path.  Slowly you begin to back away hoping nothing will happen.";
         }
     }
     return result;
@@ -118,17 +122,17 @@ const getQestion = function(choices) {
         result = ["-", "-"];
     }
     else if (choices[0] == 0) {
-        result = ["Continue", "Retreat"];
+        result = ["Continue", "Stop"];
     }
     else if (choices[0] == 1) {
         if (choices[1] == 0) {
-            result = ["100", "100"];
+            result = ["Faster", "Slower"];
         }
         else if (choices[1] == 1) {
-            result = ["110", "110"];
+            result = ["Advance", "Retreat"];
         }
         else {
-            result = ["120", "120"];
+            result = ["Now", "Never"];
         }
     }
     else if (choices[0] == 2) {
