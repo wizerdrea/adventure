@@ -17,7 +17,7 @@
         <a class="navbar-brand" href="/adventure">Adventure</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span></button>
-    
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -38,29 +38,42 @@
             </ul>
         </div>
     </nav>
-    
+
     <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-12 col-md-8">
-        <p class="textbox">In every adventrue it is important to have an animal companion at your side.  You never know, having an animal companion my just increase your chance to survive!</p>
-      </div>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-8">
+                <p class="textbox">In every adventure it is important to have an animal companion at your side. You never know, having an animal companion might just increase your chance to survive!</p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-8">
+                <div class="textbox">
+                    <p>Which animal companion will you choose?</p>
+                    <form id="inputForm">
+                        <input class="inputOption" id="dog?" type="radio" name="gender" value="dog" checked> Dog
+                        <input class="inputOption" id="cat?" type="radio" name="gender" value="cat"> Cat
+                        <input class="inputOption" id="bird?" type="radio" name="gender" value="bird"> Bird
+                        <input type="submit" value="Find Companion">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div id="animalOutput" class="col-12 col-md-8  textbox">
+                
+            </div>
+        </div>
     </div>
-    <div class="row justify-content-md-center">
-      <div class="col-12 col-md-8">
-        <p id="howtopagebody">In adventure you will be presented with a series of choices, such as "up or down", "right or left" or "in or out". However, as you can see, these choices don't provide much context as to what you are actually choosing. Your challenge is to make
-          the right choices to survive. If you're lucky, you might just make it!!</p>
-      </div>
-    </div>
-  </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     <div class="footer">
         <p id="footer">GitHub: <a href="https://github.com/wizerdrea/adventure">https://github.com/wizerdrea/adventure</a></p>
     </div>
+    <script text="type/javascript" src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

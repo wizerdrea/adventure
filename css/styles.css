@@ -151,6 +151,24 @@
   text-align: left;
 }
 
+.animalName {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputOption {
+  margin-top: 0;
+}
+
+#inputForm {
+  margin-top: 0;
+}
 
 /* game page */
 
