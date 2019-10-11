@@ -137,7 +137,22 @@
   text-align: left;
 }
 
-/* gmae page */
+/* animal companion page */
+.textbox {
+  background-color: rgba(200, 200, 200, .75) !important;
+  margin-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 125%;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  font-family: 'Gilda Display', serif;
+  text-align: left;
+}
+
+
+/* game page */
 
 #gameHeader {
   font-family: cursive;
